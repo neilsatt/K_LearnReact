@@ -1,0 +1,9 @@
+#container {
+  padding: 20px;
+  background-color: #EEE;
+}
+#container h2 {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #0080a8;
+}
