@@ -14,10 +14,19 @@
   <div id="container"></div>
   <script type="text/babel">
     var destination = document.querySelector("#container");
+    class HelloWorld extends React.Component {
+            render() {
+            return <p>Hello, {this.props.greetTarget}.</p>
+        }
+    }
+
     ReactDOM.render(
-      <h2>React Test</h2>,
-    destination
-);
+    <div>
+      <HelloWorld greetTarget="Frank"/>
+      <HelloWorld greetTarget="Ted"/>
+    </div>,
+      document.querySelector("#container")
+    );
   </script>
 </body>
  
