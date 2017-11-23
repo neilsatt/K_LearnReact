@@ -40,10 +40,20 @@
                 );
             }
         };
+
+       
+            
+        function showCircle() {
+          var colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363", "#C0C0C0", "#808080",  "#FF0000", "#808080"];
+          var ran = Math.floor(Math.random() * colors.length);
+
+          // return a Circle with a randomly chosen color
+          return <Circle bgColor={colors[ran]}/>;
+        };
  
         ReactDOM.render(
             <div>
-                <Circle bgColor="#F9C240"/>
+                {showCircle()}
             </div>,
             destination
         );
